@@ -1,0 +1,50 @@
+[
+  {
+    "day": "Friday",
+    "date": "5/02",
+    "ships": []
+  },
+  {
+    "day": "Saturday",
+    "date": "5/03",
+    "ships": [
+      "Liberty Of The Seas",
+      "Norwegian Getaway"
+    ]
+  },
+  {
+    "day": "Sunday",
+    "date": "5/04",
+    "ships": [
+      "Oceania Vista",
+      "Norwegian Jewel",
+      "Norwegian Getaway"
+    ]
+  },
+  {
+    "day": "Monday",
+    "date": "5/05",
+    "ships": []
+  },
+  {
+    "day": "Tuesday",
+    "date": "5/06",
+    "ships": [
+      "Norwegian Jewel"
+    ]
+  },
+  {
+    "day": "Wednesday",
+    "date": "5/07",
+    "ships": [
+      "Carnival Pride"
+    ]
+  },
+  {
+    "day": "Thursday",
+    "date": "5/08",
+    "ships": [
+      "Norwegian Getaway"
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap');
+
+.day-entry,
+.last-updated {
+  font-family: 'Cabin', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e0e0e5;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem auto;
+  max-width: 620px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.day-header {
+  font-family: 'Oswald', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: #1c1c1e;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+  border-right: 1px solid #666;
+  padding-right: 1rem;
+  margin-right: 0.25rem;
+  min-width: 140px;
+}
+
+.ship-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.6rem;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.ship {
+  font-family: 'Cabin', sans-serif;
+  font-size: 0.75rem;
+  color: #3c3c43;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  line-height: 1.3;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.04);
+  transition: background 0.15s ease;
+}
+
+.ship[data-status='active'] {
+  background: #e5f4f8;
+  color: #666666;
+}
+
+.ship[data-status='none'] {
+  background: none;
+  color: #666666;
+  font-style: italic;
+}
+.last-updated {
+  font-size: 0.5 rem;
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+}
