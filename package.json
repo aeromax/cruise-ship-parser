@@ -1,5 +1,5 @@
 {
-  "name": "express-simple-starter",
+  "name": "cruise-ship-parser",
   "private": true,
   "scripts": {
     "start": "node index.js",

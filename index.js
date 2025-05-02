@@ -71,22 +71,22 @@ async function fetchCruiseDataAndSaveToFile() {
 
 fetchCruiseDataAndSaveToFile();
 
-function scheduleDailyUpdateAt5AM() {
-  const now = new Date();
-  const next5am = new Date();
-  next5am.setHours(5, 0, 0, 0);
-  if (now >= next5am) {
-    next5am.setDate(next5am.getDate() + 1);
-  }
-  const delay = next5am - now;
+// function scheduleDailyUpdateAt5AM() {
+//   const now = new Date();
+//   const next5am = new Date();
+//   next5am.setHours(5, 0, 0, 0);
+//   if (now >= next5am) {
+//     next5am.setDate(next5am.getDate() + 1);
+//   }
+//   const delay = next5am - now;
 
-  setTimeout(() => {
-    fetchCruiseDataAndSaveToFile();
-    setInterval(fetchCruiseDataAndSaveToFile, 24 * 60 * 60 * 1000);
-  }, delay);
-}
+//   setTimeout(() => {
+//     fetchCruiseDataAndSaveToFile();
+//     setInterval(fetchCruiseDataAndSaveToFile, 24 * 60 * 60 * 1000);
+//   }, delay);
+// }
 
-scheduleDailyUpdateAt5AM();
+// scheduleDailyUpdateAt5AM();
 
 app.use((req, res, next) => {
   res.setHeader(
